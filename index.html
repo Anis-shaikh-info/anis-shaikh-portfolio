@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anis Shaikh - Cloud Engineer | DevOps Specialist">
+    <meta name="keywords" content="Cloud Engineer, AWS, DevOps, Infrastructure, Kubernetes">
+    <meta name="author" content="Anis Shaikh">
+    <title>Anis Shaikh - Cloud Engineer | DevOps Specialist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="terminal-boot">
+            <div class="boot-line">Initializing System...</div>
+            <div class="boot-line">Loading Cloud Infrastructure...</div>
+            <div class="boot-line">Connecting to AWS Services...</div>
+            <div class="boot-line">System Ready.</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">anis@cloud:~$</div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">./home</a></li>
+                <li><a href="#status" class="nav-link">./status</a></li>
+                <li><a href="#architecture" class="nav-link">./architecture</a></li>
+                <li><a href="#experience" class="nav-link">./experience</a></li>
+                <li><a href="#skills" class="nav-link">./skills</a></li>
+                <li><a href="#contact" class="nav-link">./contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-avatar">
+                    <div class="avatar-frame">
+                        <div class="avatar-placeholder">
+                        <img src="profile-photo.jpg" alt="Anis Shaikh Profile Photo" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-name glitch" data-text="Anis Shaikh">Anis Shaikh</h1>
+                    <h2 class="hero-title">
+                        <span class="typing-text" id="typing"></span>
+                        <span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-tagline">Architecting scalable cloud solutions with 3+ years of expertise</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">3+</div>
+                            <div class="stat-label">Years</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">AWS</div>
+                            <div class="stat-label">Expert</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">K8s</div>
+                            <div class="stat-label">Specialist</div>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#status" class="btn btn--cyber">View System Status</a>
+                        <a href="#contact" class="btn btn--outline">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Status Dashboard -->
+    <section id="status" class="status-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-bracket">[</span>
+                System Status Dashboard
+                <span class="title-bracket">]</span>
+            </h2>
+            
+            <!-- System Overview -->
+            <div class="status-overview">
+                <div class="status-card">
+                    <div class="card-header">
+                        <h3>System Health</h3>
+                        <div class="status-indicator status-online">ONLINE</div>
+                    </div>
+                    <div class="metrics-grid">
+                        <div class="metric-item">
+                            <div class="metric-label">Uptime</div>
+                            <div class="metric-value" id="uptime">99.9%</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-label">Response Time</div>
+                            <div class="metric-value" id="response-time">178ms</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-label">Active Deployments</div>
+                            <div class="metric-value" id="deployments">12</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-label">Cost Savings</div>
+                            <div class="metric-value" id="cost-savings">35%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Metrics -->
+            <div class="performance-grid">
+                <div class="performance-card">
+                    <h4>CPU Usage</h4>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="cpu-progress" style="width: 23%"></div>
+                        </div>
+                        <span class="progress-value" id="cpu-value">23%</span>
+                    </div>
+                </div>
+                <div class="performance-card">
+                    <h4>Memory Usage</h4>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="memory-progress" style="width: 67%"></div>
+                        </div>
+                        <span class="progress-value" id="memory-value">67%</span>
+                    </div>
+                </div>
+                <div class="performance-card">
+                    <h4>Network I/O</h4>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="network-progress" style="width: 45%"></div>
+                        </div>
+                        <span class="progress-value" id="network-value">45%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AWS Services Status -->
+            <div class="aws-services">
+                <h3>AWS Services Status</h3>
+                <div class="services-grid" id="aws-services-grid">
+                    <!-- Services will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Overview -->
+    <section id="architecture" class="architecture-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-bracket">[</span>
+                Architecture Overview
+                <span class="title-bracket">]</span>
+            </h2>
+
+            <!-- Architecture Diagram -->
+            <div class="architecture-diagram">
+                <div class="arch-layer presentation-layer">
+                    <h4>Presentation Layer</h4>
+                    <div class="arch-components">
+                        <div class="arch-component">CloudFront</div>
+                        <div class="arch-component">Route 53</div>
+                        <div class="arch-component">SSL/TLS</div>
+                    </div>
+                </div>
+                
+                <div class="arch-layer application-layer">
+                    <h4>Application Layer</h4>
+                    <div class="arch-components">
+                        <div class="arch-component">EKS</div>
+                        <div class="arch-component">EC2</div>
+                        <div class="arch-component">Lambda</div>
+                        <div class="arch-component">Auto Scaling</div>
+                    </div>
+                </div>
+                
+                <div class="arch-layer data-layer">
+                    <h4>Data Layer</h4>
+                    <div class="arch-components">
+                        <div class="arch-component">RDS</div>
+                        <div class="arch-component">S3</div>
+                        <div class="arch-component">ElastiCache</div>
+                    </div>
+                </div>
+
+                <div class="arch-layer security-layer">
+                    <h4>Security Layer</h4>
+                    <div class="arch-components">
+                        <div class="arch-component">VPC</div>
+                        <div class="arch-component">Security Groups</div>
+                        <div class="arch-component">IAM</div>
+                        <div class="arch-component">WAF</div>
+                    </div>
+                </div>
+
+                <div class="arch-layer monitoring-layer">
+                    <h4>Monitoring & Observability</h4>
+                    <div class="arch-components">
+                        <div class="arch-component">Grafana</div>
+                        <div class="arch-component">Prometheus</div>
+                        <div class="arch-component">New Relic</div>
+                        <div class="arch-component">CloudWatch</div>
+                    </div>
+                </div>
+
+                <div class="arch-layer automation-layer">
+                    <h4>Automation & CI/CD</h4>
+                    <div class="arch-components">
+                        <div class="arch-component">Terraform</div>
+                        <div class="arch-component">Jenkins</div>
+                        <div class="arch-component">GitHub Actions</div>
+                        <div class="arch-component">CodePipeline</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technology Stack -->
+            <div class="tech-stack">
+                <h3>Technology Stack</h3>
+                <div class="tech-categories">
+                    <div class="tech-category">
+                        <h4>Cloud Platforms</h4>
+                        <div class="tech-items">
+                            <span class="tech-item">AWS (Primary)</span>
+                            <span class="tech-item">Multi-cloud</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h4>Containers & Orchestration</h4>
+                        <div class="tech-items">
+                            <span class="tech-item">Docker</span>
+                            <span class="tech-item">Kubernetes</span>
+                            <span class="tech-item">Helm</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h4>Infrastructure as Code</h4>
+                        <div class="tech-items">
+                            <span class="tech-item">Terraform</span>
+                            <span class="tech-item">CloudFormation</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h4>Programming & Scripting</h4>
+                        <div class="tech-items">
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">Bash</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-bracket">[</span>
+                Experience Timeline
+                <span class="title-bracket">]</span>
+            </h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Jan 2023 — Present</div>
+                    <div class="timeline-content">
+                        <h3>Cloud Engineer</h3>
+                        <h4>Angira Enterprises Pvt. Ltd.</h4>
+                        <p>Designed and managed AWS infrastructure (EC2, VPC, scaling, security groups) for production environments. Automated provisioning using Terraform and CloudFormation. Managed Kubernetes clusters (EKS), improving reliability of containerised applications.</p>
+                        <div class="achievements">
+                            <span class="achievement">40% reduction in incident resolution time</span>
+                            <span class="achievement">30% improvement in uptime</span>
+                            <span class="achievement">35% cost optimization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Apr 2022 — Jul 2022</div>
+                    <div class="timeline-content">
+                        <h3>Associate Cloud Operation Engineer</h3>
+                        <h4>Cornerstone OnDemand</h4>
+                        <p>Deployed and maintained AWS-based applications. Managed infrastructure updates across cloud and data centres. Monitored and resolved performance issues.</p>
+                        <div class="achievements">
+                            <span class="achievement">AWS deployment expertise</span>
+                            <span class="achievement">Performance optimization</span>
+                            <span class="achievement">Infrastructure management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Oct 2019 — Apr 2022</div>
+                    <div class="timeline-content">
+                        <h3>Pool Builder - Operations</h3>
+                        <h4>Credence Resources Management</h4>
+                        <p>Managed data operations and workflows. Improved efficiency through process automation and monitoring.</p>
+                        <div class="achievements">
+                            <span class="achievement">Process automation</span>
+                            <span class="achievement">Workflow optimization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Aug 2016 — Sep 2019</div>
+                    <div class="timeline-content">
+                        <h3>Desktop Support Engineer</h3>
+                        <h4>Universal Enterprise Pvt.</h4>
+                        <p>Delivered comprehensive IT support and system troubleshooting. Built foundation in infrastructure management.</p>
+                        <div class="achievements">
+                            <span class="achievement">IT support excellence</span>
+                            <span class="achievement">System administration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-bracket">[</span>
+                Skills Matrix
+                <span class="title-bracket">]</span>
+            </h2>
+            <div class="skills-grid" id="skills-grid">
+                <!-- Skills will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Terminal -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-bracket">[</span>
+                Contact Terminal
+                <span class="title-bracket">]</span>
+            </h2>
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <div class="control-btn close"></div>
+                        <div class="control-btn minimize"></div>
+                        <div class="control-btn maximize"></div>
+                    </div>
+                    <div class="terminal-title">anis@cloud-engineer:~$</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="prompt">anis@cloud-engineer:~$</span> whoami
+                    </div>
+                    <div class="terminal-output">
+                        <p>Cloud Engineer | DevOps Specialist</p>
+                        <p>Specializing in AWS, Kubernetes, and Infrastructure Automation</p>
+                    </div>
+                    
+                    <div class="terminal-line">
+                        <span class="prompt">anis@cloud-engineer:~$</span> contact --list
+                    </div>
+                    <div class="terminal-output">
+                        <div class="contact-item">
+                            <span class="contact-key">email:</span>
+                            <a href="mailto:shaikhanis1996@gmail.com" class="contact-value">shaikhanis1996@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-key">phone:</span>
+                            <a href="tel:+918830337542" class="contact-value">+918830337542</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-key">linkedin:</span>
+                            <a href="https://www.linkedin.com/in/anis-shaikh-5a775b268" target="_blank" class="contact-value">linkedin.com/in/anis-shaikh</a>
+                        </div>
+                    </div>
+
+                    <div class="terminal-line">
+                        <span class="prompt">anis@cloud-engineer:~$</span> certifications --show
+                    </div>
+                    <div class="terminal-output">
+                        <div class="cert-item">
+                            <span class="cert-name">AWS Solutions Architect - Associate</span>
+                            <span class="cert-status">[Training - Aug 2025]</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-name">Cisco Data Science & Python</span>
+                            <span class="cert-status">[Completed]</span>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-name">Be10X AI Tools Workshop</span>
+                            <span class="cert-status">[Completed - Sep 2025]</span>
+                        </div>
+                    </div>
+
+                    <div class="terminal-line">
+                        <span class="prompt">anis@cloud-engineer:~$</span> <span class="cursor">|</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Anis Shaikh. Built with cloud-native technologies.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
